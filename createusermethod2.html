@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Create user and get the data from user method 2
+        </title>
+        <script>
+            function createUser(){
+               
+                function createUser(f_name,l_name){
+                    this.firstname=f_name
+                    this.lastname=l_name
+                }
+
+                var fname = document.getElementById('f_name').value
+                var lname = document.getElementById('l_name').value
+                var user = new createUser(fname,lname)
+                document.write("<h4> Object is created </h4>")
+                document.write(user.firstname + "<br/>")
+                document.write(user.lastname + "<br/>")
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            First Name : <input type="text" id="f_name" name="fname"/><br/>
+            Last Name  : <input type ="text" id="l_name" name="lname"/><br/>
+            <button type="submit" onclick="createUser(fname.value,lname.value)">Submit</button>
+        </form>
+    </body>
+</html>

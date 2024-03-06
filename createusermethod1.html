@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Accepting the data from user for objects.
+        </title>
+        <script>
+            function createUser(){
+                var user = new Object()
+                user.firstname=document.getElementById('f_name').value
+                user.lastname=document.getElementById('l_name').value
+
+                document.write("<h4> Obhect is created </h4>")
+                document.write(user.firstname + "<br/>")
+                document.write(user.lastname + "<br/>")
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            First name:  <input type="text" id="f_name" name="fname" /><br/>
+            Last name : <input type="text" id="l_name" name="lname" /><br/>
+            <button type="submit" onclick="createUser()">Submit</button>
+        </form>
+    </body>
+</html>

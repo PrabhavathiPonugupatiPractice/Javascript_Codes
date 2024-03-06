@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+            //without hoisting
+            let var1 // declaration
+            var1=10 // initialization
+            document.write(var1 + "<br/>")
+
+            //hoisting
+
+            function hoistingCheck(){
+                a =10
+                let b = 20 // local variable
+
+            }
+
+            hoistingCheck()
+            myFunction()
+             function myFunction(){
+                document.write("a is :" + a + "<br/>")
+                document.write("b is :" + b + "<br/>")
+            }
+        </script>
+    </body>
+</html>
