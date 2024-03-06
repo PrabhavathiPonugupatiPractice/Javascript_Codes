@@ -1,15 +1,17 @@
 <html>
     <head>
         <script>
-             
-            function createUser(f_name,l_name){
-                this.f_name = f_name
-                this.l_name = l_name
+             function createUser(){
+                function createUser(f_name,l_name){
+                this.fname = f_name
+                this.lname = l_name
                 display()
             }
+             }
+            
             
             function display(){
-                var user = new createUser(fname, lname)
+                var user = new createUser(f_name, l_name)
                 document.write("<h3>User object created</h3>")
                 document.write(user.f_name)
                 document.write("<br/>")
